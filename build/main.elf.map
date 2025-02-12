@@ -177,9 +177,9 @@ Discarded input sections
  .text.ssd1306_draw_string
                 0x00000000       0x40 CMakeFiles/main.dir/src/inc/ssd1306.c.o
  .rodata.font   0x00000000      0x1f8 CMakeFiles/main.dir/src/inc/ssd1306.c.o
- .text          0x00000000        0x0 CMakeFiles/main.dir/src/LED_PWM.c.o
- .data          0x00000000        0x0 CMakeFiles/main.dir/src/LED_PWM.c.o
- .bss           0x00000000        0x0 CMakeFiles/main.dir/src/LED_PWM.c.o
+ .text          0x00000000        0x0 CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
+ .data          0x00000000        0x0 CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
+ .bss           0x00000000        0x0 CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
  .text          0x00000000        0x0 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o
  .data          0x00000000        0x0 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o
  .bss           0x00000000        0x0 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -2859,7 +2859,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x10000938                ssd1306_rect
  *fill*         0x10000a16        0x2 
  .text.init_pwm_led
-                0x10000a18       0x50 CMakeFiles/main.dir/src/LED_PWM.c.o
+                0x10000a18       0x50 CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
                 0x10000a18                init_pwm_led
  .text.gpio_set_function
                 0x10000a68       0x34 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
@@ -4508,7 +4508,7 @@ LOAD CMakeFiles/main.dir/src/debouncer.c.o
 LOAD CMakeFiles/main.dir/src/hardwareFiles/Leds.c.o
 LOAD CMakeFiles/main.dir/src/hardwareFiles/buttons.c.o
 LOAD CMakeFiles/main.dir/src/inc/ssd1306.c.o
-LOAD CMakeFiles/main.dir/src/LED_PWM.c.o
+LOAD CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
 LOAD CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o
 LOAD CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
 LOAD CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o
@@ -4628,7 +4628,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000000fa       0x2c CMakeFiles/main.dir/src/inc/ssd1306.c.o
  .ARM.attributes
-                0x00000126       0x2c CMakeFiles/main.dir/src/LED_PWM.c.o
+                0x00000126       0x2c CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
  .ARM.attributes
                 0x00000152       0x2c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
  .ARM.attributes
@@ -4784,7 +4784,7 @@ LOAD linker stubs
  .comment       0x00000026       0x27 CMakeFiles/main.dir/src/hardwareFiles/Leds.c.o
  .comment       0x00000026       0x27 CMakeFiles/main.dir/src/hardwareFiles/buttons.c.o
  .comment       0x00000026       0x27 CMakeFiles/main.dir/src/inc/ssd1306.c.o
- .comment       0x00000026       0x27 CMakeFiles/main.dir/src/LED_PWM.c.o
+ .comment       0x00000026       0x27 CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
  .comment       0x00000026       0x27 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
  .comment       0x00000026       0x27 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o
  .comment       0x00000026       0x27 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.o
@@ -4854,7 +4854,7 @@ LOAD linker stubs
  .debug_info    0x00001947      0x74c CMakeFiles/main.dir/src/hardwareFiles/Leds.c.o
  .debug_info    0x00002093      0x5a9 CMakeFiles/main.dir/src/hardwareFiles/buttons.c.o
  .debug_info    0x0000263c     0x1229 CMakeFiles/main.dir/src/inc/ssd1306.c.o
- .debug_info    0x00003865      0x624 CMakeFiles/main.dir/src/LED_PWM.c.o
+ .debug_info    0x00003865      0x624 CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
  .debug_info    0x00003e89     0x1d0f CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_info    0x00005b98      0x1c6 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o
  .debug_info    0x00005d5e      0x1b4 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.o
@@ -4932,7 +4932,7 @@ LOAD linker stubs
  .debug_abbrev  0x0000057b      0x285 CMakeFiles/main.dir/src/hardwareFiles/Leds.c.o
  .debug_abbrev  0x00000800      0x1bf CMakeFiles/main.dir/src/hardwareFiles/buttons.c.o
  .debug_abbrev  0x000009bf      0x222 CMakeFiles/main.dir/src/inc/ssd1306.c.o
- .debug_abbrev  0x00000be1      0x27a CMakeFiles/main.dir/src/LED_PWM.c.o
+ .debug_abbrev  0x00000be1      0x27a CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
  .debug_abbrev  0x00000e5b      0x42d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_abbrev  0x00001288       0xdd CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o
  .debug_abbrev  0x00001365      0x12d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.o
@@ -5017,7 +5017,7 @@ LOAD linker stubs
  .debug_loclists
                 0x0000073c      0x9c1 CMakeFiles/main.dir/src/inc/ssd1306.c.o
  .debug_loclists
-                0x000010fd      0x18f CMakeFiles/main.dir/src/LED_PWM.c.o
+                0x000010fd      0x18f CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
  .debug_loclists
                 0x0000128c      0xf25 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_loclists
@@ -5143,7 +5143,7 @@ LOAD linker stubs
  .debug_aranges
                 0x000000d8       0x78 CMakeFiles/main.dir/src/inc/ssd1306.c.o
  .debug_aranges
-                0x00000150       0x20 CMakeFiles/main.dir/src/LED_PWM.c.o
+                0x00000150       0x20 CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
  .debug_aranges
                 0x00000170      0x128 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_aranges
@@ -5298,7 +5298,7 @@ LOAD linker stubs
  .debug_rnglists
                 0x000000c1       0xa1 CMakeFiles/main.dir/src/inc/ssd1306.c.o
  .debug_rnglists
-                0x00000162       0x1f CMakeFiles/main.dir/src/LED_PWM.c.o
+                0x00000162       0x1f CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
  .debug_rnglists
                 0x00000181      0x10a CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_rnglists
@@ -5408,162 +5408,162 @@ LOAD linker stubs
  .debug_rnglists
                 0x00001d6a       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
-.debug_line     0x00000000    0x1e12d
+.debug_line     0x00000000    0x1e13b
  .debug_line    0x00000000      0x996 CMakeFiles/main.dir/main.c.o
  .debug_line    0x00000996      0x1fe CMakeFiles/main.dir/src/debouncer.c.o
  .debug_line    0x00000b94      0x37c CMakeFiles/main.dir/src/hardwareFiles/Leds.c.o
  .debug_line    0x00000f10      0x299 CMakeFiles/main.dir/src/hardwareFiles/buttons.c.o
  .debug_line    0x000011a9      0x797 CMakeFiles/main.dir/src/inc/ssd1306.c.o
- .debug_line    0x00001940      0x333 CMakeFiles/main.dir/src/LED_PWM.c.o
- .debug_line    0x00001c73      0xd61 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_line    0x000029d4      0x212 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o
- .debug_line    0x00002be6      0x18f CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_line    0x00002d75      0x582 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.o
- .debug_line    0x000032f7      0x3a3 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.o
- .debug_line    0x0000369a      0x329 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_line    0x000039c3     0x117e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.o
- .debug_line    0x00004b41      0x23a CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.o
- .debug_line    0x00004d7b     0x11d4 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.o
- .debug_line    0x00005f4f      0x323 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/critical_section.c.o
- .debug_line    0x00006272     0x1d78 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.o
- .debug_line    0x00007fea      0xddf CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.o
- .debug_line    0x00008dc9      0x91f CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_uart/uart.c.o
- .debug_line    0x000096e8      0xb07 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_line    0x0000a1ef      0x46b CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.o
- .debug_line    0x0000a65a      0x4d3 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_watchdog/watchdog.c.o
- .debug_line    0x0000ab2d      0x283 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_line    0x0000adb0      0x260 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_line    0x0000b010      0x2b6 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_line    0x0000b2c6      0x1f5 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.o
- .debug_line    0x0000b4bb      0x473 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_line    0x0000b92e      0x4aa CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_line    0x0000bdd8      0x107 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_line    0x0000bedf      0x2a9 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_line    0x0000c188      0x3f3 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_line    0x0000c57b      0x340 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_line    0x0000c8bb       0x60 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_line    0x0000c91b       0x61 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_line    0x0000c97c      0x3a8 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_line    0x0000cd24      0x30e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_line    0x0000d032      0x21b CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_malloc/malloc.c.o
- .debug_line    0x0000d24d       0x94 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_line    0x0000d2e1      0x16c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_line    0x0000d44d     0x1215 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.o
- .debug_line    0x0000e662       0xa5 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.o
- .debug_line    0x0000e707      0x74d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_line    0x0000ee54      0xca4 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.o
- .debug_line    0x0000faf8      0xa84 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- .debug_line    0x0001057c      0x4a6 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o
- .debug_line    0x00010a22      0xeab CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- .debug_line    0x000118cd      0x31e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
- .debug_line    0x00011beb      0x2c4 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_line    0x00011eaf      0x8de CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_flash/flash.c.o
- .debug_line    0x0001278d     0x112f CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
- .debug_line    0x000138bc      0xabc CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- .debug_line    0x00014378     0x22cb CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/device/usbd.c.o
- .debug_line    0x00016643      0x589 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/device/usbd_control.c.o
- .debug_line    0x00016bcc     0x1035 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/cdc/cdc_device.c.o
- .debug_line    0x00017c01      0x9f9 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/vendor/vendor_device.c.o
- .debug_line    0x000185fa     0x114c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/tusb.c.o
- .debug_line    0x00019746     0x139a CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/common/tusb_fifo.c.o
- .debug_line    0x0001aae0      0x343 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_adc/adc.c.o
- .debug_line    0x0001ae23      0xc7e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o
- .debug_line    0x0001baa1       0x4a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0001baeb      0x155 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-calloc.o)
- .debug_line    0x0001bc40       0xe7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-impure.o)
- .debug_line    0x0001bd27      0x22a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-callocr.o)
- .debug_line    0x0001bf51      0x942 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
- .debug_line    0x0001c893      0x520 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
- .debug_line    0x0001cdb3       0xe8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
- .debug_line    0x0001ce9b      0x153 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
- .debug_line    0x0001cfee      0x58a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
- .debug_line    0x0001d578       0xc6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
- .debug_line    0x0001d63e      0x1aa /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
- .debug_line    0x0001d7e8      0x193 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
- .debug_line    0x0001d97b       0xd1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
- .debug_line    0x0001da4c      0x116 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-errno.o)
- .debug_line    0x0001db62      0x1ea /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-reent.o)
- .debug_line    0x0001dd4c      0x163 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
- .debug_line    0x0001deaf      0x27e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+ .debug_line    0x00001940      0x341 CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
+ .debug_line    0x00001c81      0xd61 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_line    0x000029e2      0x212 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o
+ .debug_line    0x00002bf4      0x18f CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_line    0x00002d83      0x582 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.o
+ .debug_line    0x00003305      0x3a3 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.o
+ .debug_line    0x000036a8      0x329 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_line    0x000039d1     0x117e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.o
+ .debug_line    0x00004b4f      0x23a CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.o
+ .debug_line    0x00004d89     0x11d4 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.o
+ .debug_line    0x00005f5d      0x323 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/critical_section.c.o
+ .debug_line    0x00006280     0x1d78 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.o
+ .debug_line    0x00007ff8      0xddf CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.o
+ .debug_line    0x00008dd7      0x91f CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_uart/uart.c.o
+ .debug_line    0x000096f6      0xb07 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_line    0x0000a1fd      0x46b CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.o
+ .debug_line    0x0000a668      0x4d3 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_watchdog/watchdog.c.o
+ .debug_line    0x0000ab3b      0x283 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_line    0x0000adbe      0x260 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_line    0x0000b01e      0x2b6 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_line    0x0000b2d4      0x1f5 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_line    0x0000b4c9      0x473 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_line    0x0000b93c      0x4aa CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_line    0x0000bde6      0x107 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_line    0x0000beed      0x2a9 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_line    0x0000c196      0x3f3 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_line    0x0000c589      0x340 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_line    0x0000c8c9       0x60 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_line    0x0000c929       0x61 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_line    0x0000c98a      0x3a8 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_line    0x0000cd32      0x30e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_line    0x0000d040      0x21b CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_line    0x0000d25b       0x94 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_line    0x0000d2ef      0x16c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_line    0x0000d45b     0x1215 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.o
+ .debug_line    0x0000e670       0xa5 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_line    0x0000e715      0x74d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_line    0x0000ee62      0xca4 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_line    0x0000fb06      0xa84 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+ .debug_line    0x0001058a      0x4a6 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+ .debug_line    0x00010a30      0xeab CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ .debug_line    0x000118db      0x31e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+ .debug_line    0x00011bf9      0x2c4 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_line    0x00011ebd      0x8de CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_flash/flash.c.o
+ .debug_line    0x0001279b     0x112f CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+ .debug_line    0x000138ca      0xabc CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ .debug_line    0x00014386     0x22cb CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/device/usbd.c.o
+ .debug_line    0x00016651      0x589 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/device/usbd_control.c.o
+ .debug_line    0x00016bda     0x1035 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/cdc/cdc_device.c.o
+ .debug_line    0x00017c0f      0x9f9 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/vendor/vendor_device.c.o
+ .debug_line    0x00018608     0x114c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/tusb.c.o
+ .debug_line    0x00019754     0x139a CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/common/tusb_fifo.c.o
+ .debug_line    0x0001aaee      0x343 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_adc/adc.c.o
+ .debug_line    0x0001ae31      0xc7e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o
+ .debug_line    0x0001baaf       0x4a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0001baf9      0x155 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-calloc.o)
+ .debug_line    0x0001bc4e       0xe7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-impure.o)
+ .debug_line    0x0001bd35      0x22a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-callocr.o)
+ .debug_line    0x0001bf5f      0x942 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
+ .debug_line    0x0001c8a1      0x520 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
+ .debug_line    0x0001cdc1       0xe8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
+ .debug_line    0x0001cea9      0x153 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
+ .debug_line    0x0001cffc      0x58a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
+ .debug_line    0x0001d586       0xc6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+ .debug_line    0x0001d64c      0x1aa /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+ .debug_line    0x0001d7f6      0x193 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
+ .debug_line    0x0001d989       0xd1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+ .debug_line    0x0001da5a      0x116 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-errno.o)
+ .debug_line    0x0001db70      0x1ea /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-reent.o)
+ .debug_line    0x0001dd5a      0x163 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+ .debug_line    0x0001debd      0x27e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
-.debug_str      0x00000000     0xa278
- .debug_str     0x00000000     0xa278 CMakeFiles/main.dir/main.c.o
+.debug_str      0x00000000     0xa286
+ .debug_str     0x00000000     0xa286 CMakeFiles/main.dir/main.c.o
                                 0xd1b (size before relaxing)
- .debug_str     0x0000a278      0x278 CMakeFiles/main.dir/src/debouncer.c.o
- .debug_str     0x0000a278      0x43e CMakeFiles/main.dir/src/hardwareFiles/Leds.c.o
- .debug_str     0x0000a278      0x3f8 CMakeFiles/main.dir/src/hardwareFiles/buttons.c.o
- .debug_str     0x0000a278      0x9d4 CMakeFiles/main.dir/src/inc/ssd1306.c.o
- .debug_str     0x0000a278      0x3ee CMakeFiles/main.dir/src/LED_PWM.c.o
- .debug_str     0x0000a278      0xc36 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_str     0x0000a278      0x1fe CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o
- .debug_str     0x0000a278      0x1ef CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_str     0x0000a278      0x383 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.o
- .debug_str     0x0000a278      0x31e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.o
- .debug_str     0x0000a278      0x24e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_str     0x0000a278      0xa1d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.o
- .debug_str     0x0000a278      0x20c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.o
- .debug_str     0x0000a278      0x779 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.o
- .debug_str     0x0000a278      0x2cc CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/critical_section.c.o
- .debug_str     0x0000a278     0x1161 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.o
- .debug_str     0x0000a278      0x9c5 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.o
- .debug_str     0x0000a278      0xbdf CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_uart/uart.c.o
- .debug_str     0x0000a278      0x97e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_str     0x0000a278      0x461 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.o
- .debug_str     0x0000a278      0x385 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_watchdog/watchdog.c.o
- .debug_str     0x0000a278      0x282 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_str     0x0000a278      0x317 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_str     0x0000a278      0x229 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_str     0x0000a278      0x284 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.o
- .debug_str     0x0000a278      0x76d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_str     0x0000a278      0x481 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_str     0x0000a278       0x88 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_str     0x0000a278       0x8b CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_str     0x0000a278       0x8d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_str     0x0000a278      0x2de CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_str     0x0000a278       0x93 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_str     0x0000a278       0x91 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_str     0x0000a278       0x8b CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_str     0x0000a278      0x29a CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_str     0x0000a278      0x236 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_malloc/malloc.c.o
- .debug_str     0x0000a278       0x88 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_str     0x0000a278      0x40e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_str     0x0000a278      0x476 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.o
- .debug_str     0x0000a278       0x7c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.o
- .debug_str     0x0000a278      0x73c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_str     0x0000a278      0xd7d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.o
- .debug_str     0x0000a278      0xeaf CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- .debug_str     0x0000a278      0xdcc CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o
- .debug_str     0x0000a278      0xdfb CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- .debug_str     0x0000a278      0xf85 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
- .debug_str     0x0000a278      0x27c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_str     0x0000a278      0x664 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_flash/flash.c.o
- .debug_str     0x0000a278     0x110d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
- .debug_str     0x0000a278      0x9e0 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- .debug_str     0x0000a278     0x1a34 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/device/usbd.c.o
- .debug_str     0x0000a278      0x674 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/device/usbd_control.c.o
- .debug_str     0x0000a278     0x16cd CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/cdc/cdc_device.c.o
- .debug_str     0x0000a278      0xd7c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/vendor/vendor_device.c.o
- .debug_str     0x0000a278      0xc36 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/tusb.c.o
- .debug_str     0x0000a278      0x605 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/common/tusb_fifo.c.o
- .debug_str     0x0000a278      0x40d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_adc/adc.c.o
- .debug_str     0x0000a278      0xfe9 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o
- .debug_str     0x0000a278       0xbf /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_str     0x0000a278      0x4b1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-calloc.o)
- .debug_str     0x0000a278      0x4a5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-impure.o)
- .debug_str     0x0000a278      0x4f2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-callocr.o)
- .debug_str     0x0000a278      0x6c8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
- .debug_str     0x0000a278      0x61e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
- .debug_str     0x0000a278      0x196 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
- .debug_str     0x0000a278      0x4be /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
- .debug_str     0x0000a278      0x6a8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
- .debug_str     0x0000a278      0x1ca /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
- .debug_str     0x0000a278      0x1aa /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
- .debug_str     0x0000a278      0x4a9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
- .debug_str     0x0000a278      0x1c4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
- .debug_str     0x0000a278      0x49a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-errno.o)
- .debug_str     0x0000a278      0x4bf /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-reent.o)
- .debug_str     0x0000a278      0x235 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
- .debug_str     0x0000a278      0x257 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+ .debug_str     0x0000a286      0x278 CMakeFiles/main.dir/src/debouncer.c.o
+ .debug_str     0x0000a286      0x43e CMakeFiles/main.dir/src/hardwareFiles/Leds.c.o
+ .debug_str     0x0000a286      0x3f8 CMakeFiles/main.dir/src/hardwareFiles/buttons.c.o
+ .debug_str     0x0000a286      0x9d4 CMakeFiles/main.dir/src/inc/ssd1306.c.o
+ .debug_str     0x0000a286      0x3fc CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
+ .debug_str     0x0000a286      0xc36 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_str     0x0000a286      0x1fe CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o
+ .debug_str     0x0000a286      0x1ef CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_str     0x0000a286      0x383 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.o
+ .debug_str     0x0000a286      0x31e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.o
+ .debug_str     0x0000a286      0x24e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_str     0x0000a286      0xa1d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.o
+ .debug_str     0x0000a286      0x20c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.o
+ .debug_str     0x0000a286      0x779 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.o
+ .debug_str     0x0000a286      0x2cc CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_sync/critical_section.c.o
+ .debug_str     0x0000a286     0x1161 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.o
+ .debug_str     0x0000a286      0x9c5 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.o
+ .debug_str     0x0000a286      0xbdf CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_uart/uart.c.o
+ .debug_str     0x0000a286      0x97e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_str     0x0000a286      0x461 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.o
+ .debug_str     0x0000a286      0x385 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_watchdog/watchdog.c.o
+ .debug_str     0x0000a286      0x282 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_str     0x0000a286      0x317 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_str     0x0000a286      0x229 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_str     0x0000a286      0x284 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_str     0x0000a286      0x76d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_str     0x0000a286      0x481 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_str     0x0000a286       0x88 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_str     0x0000a286       0x8b CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_str     0x0000a286       0x8d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_str     0x0000a286      0x2de CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_str     0x0000a286       0x93 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_str     0x0000a286       0x91 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_str     0x0000a286       0x8b CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_str     0x0000a286      0x29a CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_str     0x0000a286      0x236 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_str     0x0000a286       0x88 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_str     0x0000a286      0x40e CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_str     0x0000a286      0x476 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.o
+ .debug_str     0x0000a286       0x7c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_str     0x0000a286      0x73c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_str     0x0000a286      0xd7d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_str     0x0000a286      0xeaf CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+ .debug_str     0x0000a286      0xdcc CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+ .debug_str     0x0000a286      0xdfb CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ .debug_str     0x0000a286      0xf85 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+ .debug_str     0x0000a286      0x27c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_str     0x0000a286      0x664 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_flash/flash.c.o
+ .debug_str     0x0000a286     0x110d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+ .debug_str     0x0000a286      0x9e0 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ .debug_str     0x0000a286     0x1a34 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/device/usbd.c.o
+ .debug_str     0x0000a286      0x674 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/device/usbd_control.c.o
+ .debug_str     0x0000a286     0x16cd CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/cdc/cdc_device.c.o
+ .debug_str     0x0000a286      0xd7c CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/vendor/vendor_device.c.o
+ .debug_str     0x0000a286      0xc36 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/tusb.c.o
+ .debug_str     0x0000a286      0x605 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/common/tusb_fifo.c.o
+ .debug_str     0x0000a286      0x40d CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_adc/adc.c.o
+ .debug_str     0x0000a286      0xfe9 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o
+ .debug_str     0x0000a286       0xbf /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x0000a286      0x4b1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-calloc.o)
+ .debug_str     0x0000a286      0x4a5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-impure.o)
+ .debug_str     0x0000a286      0x4f2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-callocr.o)
+ .debug_str     0x0000a286      0x6c8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
+ .debug_str     0x0000a286      0x61e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
+ .debug_str     0x0000a286      0x196 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
+ .debug_str     0x0000a286      0x4be /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
+ .debug_str     0x0000a286      0x6a8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
+ .debug_str     0x0000a286      0x1ca /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+ .debug_str     0x0000a286      0x1aa /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+ .debug_str     0x0000a286      0x4a9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
+ .debug_str     0x0000a286      0x1c4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+ .debug_str     0x0000a286      0x49a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-errno.o)
+ .debug_str     0x0000a286      0x4bf /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-reent.o)
+ .debug_str     0x0000a286      0x235 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+ .debug_str     0x0000a286      0x257 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_frame    0x00000000     0x3d30
  .debug_frame   0x00000000       0xf4 CMakeFiles/main.dir/main.c.o
@@ -5571,7 +5571,7 @@ LOAD linker stubs
  .debug_frame   0x00000114       0x58 CMakeFiles/main.dir/src/hardwareFiles/Leds.c.o
  .debug_frame   0x0000016c       0x28 CMakeFiles/main.dir/src/hardwareFiles/buttons.c.o
  .debug_frame   0x00000194      0x194 CMakeFiles/main.dir/src/inc/ssd1306.c.o
- .debug_frame   0x00000328       0x28 CMakeFiles/main.dir/src/LED_PWM.c.o
+ .debug_frame   0x00000328       0x28 CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
  .debug_frame   0x00000350      0x304 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_frame   0x00000654       0x28 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o
  .debug_frame   0x0000067c       0x44 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.o

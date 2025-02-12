@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(main main.c src/debouncer.c src/hardwareFiles/Leds.c src/hardwareFiles/buttons.c src/inc/ssd1306.c src/LED_PWM.c)
+add_executable(main main.c src/debouncer.c src/hardwareFiles/Leds.c src/hardwareFiles/buttons.c src/inc/ssd1306.c src/hardwareFiles/LED_PWM.c)
 
 pico_set_program_name(main "main")
 pico_set_program_version(main "0.1")

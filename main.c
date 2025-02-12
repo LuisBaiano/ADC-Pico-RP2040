@@ -8,7 +8,7 @@
 #include "hardware/pwm.h"
 #include "pico/stdlib.h"
 #include <stdio.h>
-#include "src/LED_PWM.h"
+#include "src/hardwareFiles/LED_PWM.h"
 
 /** @brief Configurações de I2C, pinos de LED, botões e outros periféricos. */
 ssd1306_t ssd; ///< Estrutura do display

@@ -139,19 +139,19 @@ CMakeFiles/main.dir/src/inc/ssd1306.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/inc/ssd1306.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luis/pico_projects/ADC-Pico-RP2040/src/inc/ssd1306.c -o CMakeFiles/main.dir/src/inc/ssd1306.c.s
 
-CMakeFiles/main.dir/src/LED_PWM.c.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/LED_PWM.c.o: /home/luis/pico_projects/ADC-Pico-RP2040/src/LED_PWM.c
-CMakeFiles/main.dir/src/LED_PWM.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/luis/pico_projects/ADC-Pico-RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/src/LED_PWM.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/LED_PWM.c.o -MF CMakeFiles/main.dir/src/LED_PWM.c.o.d -o CMakeFiles/main.dir/src/LED_PWM.c.o -c /home/luis/pico_projects/ADC-Pico-RP2040/src/LED_PWM.c
+CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o: /home/luis/pico_projects/ADC-Pico-RP2040/src/hardwareFiles/LED_PWM.c
+CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/luis/pico_projects/ADC-Pico-RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o -MF CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o.d -o CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o -c /home/luis/pico_projects/ADC-Pico-RP2040/src/hardwareFiles/LED_PWM.c
 
-CMakeFiles/main.dir/src/LED_PWM.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/LED_PWM.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/luis/pico_projects/ADC-Pico-RP2040/src/LED_PWM.c > CMakeFiles/main.dir/src/LED_PWM.c.i
+CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/luis/pico_projects/ADC-Pico-RP2040/src/hardwareFiles/LED_PWM.c > CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.i
 
-CMakeFiles/main.dir/src/LED_PWM.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/LED_PWM.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luis/pico_projects/ADC-Pico-RP2040/src/LED_PWM.c -o CMakeFiles/main.dir/src/LED_PWM.c.s
+CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luis/pico_projects/ADC-Pico-RP2040/src/hardwareFiles/LED_PWM.c -o CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.s
 
 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o: /home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c
@@ -1325,7 +1325,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/hardwareFiles/Leds.c.o" \
 "CMakeFiles/main.dir/src/hardwareFiles/buttons.c.o" \
 "CMakeFiles/main.dir/src/inc/ssd1306.c.o" \
-"CMakeFiles/main.dir/src/LED_PWM.c.o" \
+"CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o" \
 "CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o" \
 "CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o" \
 "CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o" \
@@ -1419,7 +1419,7 @@ main.elf: CMakeFiles/main.dir/src/debouncer.c.o
 main.elf: CMakeFiles/main.dir/src/hardwareFiles/Leds.c.o
 main.elf: CMakeFiles/main.dir/src/hardwareFiles/buttons.c.o
 main.elf: CMakeFiles/main.dir/src/inc/ssd1306.c.o
-main.elf: CMakeFiles/main.dir/src/LED_PWM.c.o
+main.elf: CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
 main.elf: CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o
 main.elf: CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
 main.elf: CMakeFiles/main.dir/home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o

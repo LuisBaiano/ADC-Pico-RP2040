@@ -2045,30 +2045,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
-src/LED_PWM.o: src/LED_PWM.c.o
-.PHONY : src/LED_PWM.o
-
-# target to build an object file
-src/LED_PWM.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/LED_PWM.c.o
-.PHONY : src/LED_PWM.c.o
-
-src/LED_PWM.i: src/LED_PWM.c.i
-.PHONY : src/LED_PWM.i
-
-# target to preprocess a source file
-src/LED_PWM.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/LED_PWM.c.i
-.PHONY : src/LED_PWM.c.i
-
-src/LED_PWM.s: src/LED_PWM.c.s
-.PHONY : src/LED_PWM.s
-
-# target to generate assembly for a file
-src/LED_PWM.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/LED_PWM.c.s
-.PHONY : src/LED_PWM.c.s
-
 src/debouncer.o: src/debouncer.c.o
 .PHONY : src/debouncer.o
 
@@ -2092,6 +2068,30 @@ src/debouncer.s: src/debouncer.c.s
 src/debouncer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/debouncer.c.s
 .PHONY : src/debouncer.c.s
+
+src/hardwareFiles/LED_PWM.o: src/hardwareFiles/LED_PWM.c.o
+.PHONY : src/hardwareFiles/LED_PWM.o
+
+# target to build an object file
+src/hardwareFiles/LED_PWM.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.o
+.PHONY : src/hardwareFiles/LED_PWM.c.o
+
+src/hardwareFiles/LED_PWM.i: src/hardwareFiles/LED_PWM.c.i
+.PHONY : src/hardwareFiles/LED_PWM.i
+
+# target to preprocess a source file
+src/hardwareFiles/LED_PWM.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.i
+.PHONY : src/hardwareFiles/LED_PWM.c.i
+
+src/hardwareFiles/LED_PWM.s: src/hardwareFiles/LED_PWM.c.s
+.PHONY : src/hardwareFiles/LED_PWM.s
+
+# target to generate assembly for a file
+src/hardwareFiles/LED_PWM.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hardwareFiles/LED_PWM.c.s
+.PHONY : src/hardwareFiles/LED_PWM.c.s
 
 src/hardwareFiles/Leds.o: src/hardwareFiles/Leds.c.o
 .PHONY : src/hardwareFiles/Leds.o
@@ -2411,12 +2411,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/LED_PWM.o"
-	@echo "... src/LED_PWM.i"
-	@echo "... src/LED_PWM.s"
 	@echo "... src/debouncer.o"
 	@echo "... src/debouncer.i"
 	@echo "... src/debouncer.s"
+	@echo "... src/hardwareFiles/LED_PWM.o"
+	@echo "... src/hardwareFiles/LED_PWM.i"
+	@echo "... src/hardwareFiles/LED_PWM.s"
 	@echo "... src/hardwareFiles/Leds.o"
 	@echo "... src/hardwareFiles/Leds.i"
 	@echo "... src/hardwareFiles/Leds.s"

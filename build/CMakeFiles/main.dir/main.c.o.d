@@ -78,4 +78,4 @@ CMakeFiles/main.dir/main.c.o: \
  /home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
  /home/luis/.pico-sdk/sdk/2.1.0/src/rp2040/hardware_regs/include/hardware/regs/pwm.h \
  /usr/include/newlib/stdio.h /usr/include/newlib/sys/stdio.h \
- /home/luis/pico_projects/ADC-Pico-RP2040/src/LED_PWM.h
+ /home/luis/pico_projects/ADC-Pico-RP2040/src/hardwareFiles/LED_PWM.h

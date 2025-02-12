@@ -45,13 +45,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  20 .debug_rnglists 00001d9a  00000000  00000000  00066718  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line   0001e12d  00000000  00000000  000684b2  2**0
+ 21 .debug_line   0001e13b  00000000  00000000  000684b2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_str    0000a278  00000000  00000000  000865df  2**0
+ 22 .debug_str    0000a286  00000000  00000000  000865ed  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_frame  00003d30  00000000  00000000  00090858  2**2
+ 23 .debug_frame  00003d30  00000000  00000000  00090874  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 24 .debug_line_str 000002f7  00000000  00000000  00094588  2**0
+ 24 .debug_line_str 000002f7  00000000  00000000  000945a4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 /home/luis/pico_projects/ADC-Pico-RP2040/build/main.elf:     file format elf32-littlearm
@@ -591,11 +591,11 @@ Disassembly of section .text:
 1000052c:	f002 f81a 	bl	10002564 <__wrap___aeabi_idiv>
 10000530:	0004      	movs	r4, r0
 10000532:	b2aa      	uxth	r2, r5
-10000534:	2101      	movs	r1, #1
+10000534:	2100      	movs	r1, #0
 10000536:	2006      	movs	r0, #6
 10000538:	f7ff fef2 	bl	10000320 <pwm_set_chan_level>
 1000053c:	b2a2      	uxth	r2, r4
-1000053e:	2100      	movs	r1, #0
+1000053e:	2101      	movs	r1, #1
 10000540:	2006      	movs	r0, #6
 10000542:	f7ff feed 	bl	10000320 <pwm_set_chan_level>
 10000546:	bd70      	pop	{r4, r5, r6, pc}
@@ -717,9 +717,9 @@ Disassembly of section .text:
 1000064c <main>:
 1000064c:	b570      	push	{r4, r5, r6, lr}
 1000064e:	f000 f851 	bl	100006f4 <Led_init>
-10000652:	200d      	movs	r0, #13
+10000652:	200c      	movs	r0, #12
 10000654:	f000 f9e0 	bl	10000a18 <init_pwm_led>
-10000658:	200c      	movs	r0, #12
+10000658:	200d      	movs	r0, #13
 1000065a:	f000 f9dd 	bl	10000a18 <init_pwm_led>
 1000065e:	f003 fe0b 	bl	10004278 <stdio_init_all>
 10000662:	f000 f86c 	bl	1000073e <init_buttons>
@@ -756,11 +756,11 @@ Disassembly of section .text:
 100006b4:	2b00      	cmp	r3, #0
 100006b6:	d1e8      	bne.n	1000068a <main+0x3e>
 100006b8:	2200      	movs	r2, #0
-100006ba:	2101      	movs	r1, #1
+100006ba:	2100      	movs	r1, #0
 100006bc:	2006      	movs	r0, #6
 100006be:	f7ff fe2f 	bl	10000320 <pwm_set_chan_level>
 100006c2:	2200      	movs	r2, #0
-100006c4:	2100      	movs	r1, #0
+100006c4:	2101      	movs	r1, #1
 100006c6:	2006      	movs	r0, #6
 100006c8:	f7ff fe2a 	bl	10000320 <pwm_set_chan_level>
 100006cc:	e7e1      	b.n	10000692 <main+0x46>
