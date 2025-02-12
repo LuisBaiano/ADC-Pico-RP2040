@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "PWM.C": "cpp",
+        "LED_PWM.C": "cpp"
+    }
+}
